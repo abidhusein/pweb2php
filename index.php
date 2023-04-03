@@ -29,6 +29,44 @@ $result = mysqli_query($conn, $sql);
             padding: 20px;
         }
 
+        .my-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .my-buttonn {
+            background-color: #00235B;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        .myy-button {
+            background-color: #E21818;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
         h1 {
             text-align: center;
         }
@@ -47,7 +85,8 @@ $result = mysqli_query($conn, $sql);
         }
 
         th {
-            background-color: #f2f2f2;
+            background-color: #98DFD6;
+            border : 2 px;
         }
 
         img {
@@ -72,7 +111,7 @@ $result = mysqli_query($conn, $sql);
 <body>
     <div class="container">
         <h1>Data Barang</h1>
-        <a href="tambah.php" class="tambah-btn">Tambah Barang</a>
+        <a href="tambah.php" class="my-button">Tambah Barang</a>
         <div class="main">
             <table>
                 <tr>
@@ -109,8 +148,8 @@ $result = mysqli_query($conn, $sql);
                                 <?= $row['stok']; ?>
                             </td>
                             <td>
-                                <a href="ubah.php?id=<?= $row['id_barang']; ?>" class="edit-btn">Ubah</a>
-                                <a href="hapus.php?id=<?= $row['id_barang']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')" class="delete-btn">Hapus</a>
+                                <a href="ubah.php?id=<?= $row['id_barang']; ?>" class="my-buttonn">Ubah</a>
+                                <a href="hapus.php?id=<?= $row['id_barang']; ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')" class="myy-button">Hapus</a>
                             </td>
 
                         </tr>
